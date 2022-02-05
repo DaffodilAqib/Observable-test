@@ -6,6 +6,7 @@ import { IntervalComponent } from './interval/interval.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { LoginGuardGuard } from './login-guard.guard';
 import { MerrageComponent } from './merrage/merrage.component';
+import { OFFromComponent } from './o-f-from/o-f-from.component';
 import { OperatorsComponent } from './operators/operators.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { BehaviorSubjectComponent } from './subject-comp/behavior-subject/behavior-subject.component';
@@ -19,7 +20,7 @@ const routes: Routes = [
   {path:"",redirectTo:"login-form", pathMatch:'full'},
   {path:"login-form/operators/Subject",component:SubjectComponent},
   {path:"login-form/operators",canActivate:[LoginGuardGuard],component:OperatorsComponent},
-  {path:'login-form/operators/ofFrom',component:OperatorsComponent},
+  {path:'login-form/operators/ofFrom',component:OFFromComponent},
   {path:"login-form/operators/concat",component:ConcatComponent},
   {path:"login-form/operators/merrage",component:MerrageComponent},
   {path:"login-form/operators/Subject/simple",component:SimpleComponent},

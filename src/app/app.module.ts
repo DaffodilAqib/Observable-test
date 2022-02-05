@@ -14,6 +14,7 @@ import { BehaviorSubjectComponent } from './subject-comp/behavior-subject/behavi
 import { ConcatComponent } from './concat/concat.component';
 import { MerrageComponent } from './merrage/merrage.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { OFFromComponent } from './o-f-from/o-f-from.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
     BehaviorSubjectComponent,
     ConcatComponent,
     MerrageComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    OFFromComponent
     
   ],
   imports: [
