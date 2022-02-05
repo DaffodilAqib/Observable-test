@@ -1,0 +1,53 @@
+<div class="my-3 m-5">
+    <h2>Concat</h2>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Source - 01 | Tech Channal(5)</strong>
+            <br>
+            <p class="bg-light py-2 px-4 border rounded">
+                <strong>Tech Video List : </strong> 1,2,3,4,5
+            </p>
+            <button class="btn"
+            [ngClass]="techChannelSubscribe?'btn-danger':'btn-success'"
+            (click) = "onTechSubscribe()"
+            >{{techChannelSubscribe?'Unsubscribe':'Subscribe'}}</button>
+        </div>
+        <div class="col-md-4">
+            <strong>Source - 03 | Comedy Channal(5)</strong>
+            <br>
+            <p class="bg-light py-2 px-4 border rounded">
+                <strong>Comedy Video List : </strong> 1,2,3
+            </p>
+            <button class="btn"
+            [ngClass]="comedyChannelSubscribe?'btn-danger':'btn-success'"
+            (click) = "onComedySubscribe()"
+            >{{comedyChannelSubscribe?'Unsubscribe':'Subscribe'}}</button>
+        </div>
+        <div class="col-md-4">
+            <strong>Source - 03 | News Channal(5)</strong>
+            <br>
+            <p class="bg-light py-2 px-4 border rounded">
+                <strong>News Video List : </strong> 1,2,3,4,5
+            </p>
+            <button class="btn"
+            [ngClass]="newsChannelSubscribe?'btn-danger':'btn-success'"
+            (click) = "onNewsSubscribe()"
+            >{{newsChannelSubscribe?'Unsubscribe':'Subscribe'}}</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">Your Channel (Subscriber)</div>
+                <div class="card-body">
+                    <ul id="concat-video-list">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
